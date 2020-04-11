@@ -38,3 +38,4 @@ Clone the repository to your local machine using,
 ```
 ~$ git clone https://github.com/Deep-Dey/Time-Calculation-for-Sorting-Algorithms.git
 ```
+Just execute/run the "**main.py**" file to get the output.
