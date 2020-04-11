@@ -36,5 +36,5 @@ A PYTHON3 code for time calculating some Sorting Algorithm.
 Clone the repository to your local machine using,
  
 ```
-~$ git clone https://github.com/Ayan-Kumar-Saha/Free-Springer-E-books-Downloader.git
+~$ git clone https://github.com/Deep-Dey/Time-Calculation-for-Sorting-Algorithms.git
 ```
