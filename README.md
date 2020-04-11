@@ -1,6 +1,6 @@
 # Time-Calculation-for-Sorting-Algorithms
 
-A PYTHON3 code for time calculating some Sorting Algorithm.
+A **Python 3** code for time calculating some Sorting Algorithm.
 
 # Features
 
