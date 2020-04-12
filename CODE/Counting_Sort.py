@@ -21,4 +21,4 @@ def counting_sort(a):
 
 def main(a):
     a=counting_sort(a)
-    print("The sorted list is:", a)
+    #print("The sorted list is:", a)

@@ -18,4 +18,4 @@ def comb_Sort(arr):
 
 def main(a):
     comb_Sort(a)
-    print("The sorted list is:", a)
+    #print("The sorted list is:", a)

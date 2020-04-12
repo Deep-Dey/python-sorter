@@ -20,4 +20,4 @@ def Strand_Sort(input_list):
 
 def main(a):
     a=Strand_Sort(a)
-    print("The sorted list is:", a)
+    #print("The sorted list is:", a)

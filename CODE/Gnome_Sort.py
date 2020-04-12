@@ -14,4 +14,4 @@ def Gnome_Sort(arr):
 
 def main(a):
     a=Gnome_Sort(a)
-    print("The sorted list is:", a)
+    #print("The sorted list is:", a)

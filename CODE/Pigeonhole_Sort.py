@@ -20,4 +20,4 @@ def pigeonhole_sort(a):
 
 def main(a):
     a=pigeonhole_sort(a)
-    print("The sorted list is:", a)
+    #print("The sorted list is:", a)

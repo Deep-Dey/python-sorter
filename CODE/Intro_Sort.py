@@ -29,4 +29,4 @@ def Intro_Sort(arr, begin, end):
    
 def main(arr):
     Intro_Sort(arr, 0, len(arr) - 1)
-    print("The sorted list is:", arr)
+    #print("The sorted list is:", arr)

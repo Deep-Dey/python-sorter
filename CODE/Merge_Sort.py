@@ -39,4 +39,4 @@ def merge_sort(a):
 
 def main(a):
     a=merge_sort(a)
-    print("The sorted list is:", a)
+    #print("The sorted list is:", a)

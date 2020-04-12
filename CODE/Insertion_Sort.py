@@ -14,4 +14,4 @@ def insertion_sort(a):
 
 def main(a):
     a=insertion_sort(a)
-    print("The sorted list is:", a)
+    #print("The sorted list is:", a)

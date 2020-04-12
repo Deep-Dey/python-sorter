@@ -21,4 +21,4 @@ def quick_sort(a,s,n):
 
 def main(a):
     quick_sort(a,0,len(a)-1)
-    print("The sorted list is:", a)
+    #print("The sorted list is:", a)

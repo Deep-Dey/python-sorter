@@ -14,4 +14,4 @@ def Stooge_Sort(arr, l, h):
 
 def main(a):
     a=Stooge_Sort(a, 0, len(a)-1)
-    print("The sorted list is:", a)
+    #print("The sorted list is:", a)

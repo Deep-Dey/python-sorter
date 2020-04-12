@@ -30,4 +30,4 @@ def cycleSort(a):
 
 def main(a):
     a=cycleSort(a)
-    print("The sorted list is:", a)
+    #print("The sorted list is:", a)

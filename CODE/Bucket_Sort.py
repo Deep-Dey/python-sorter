@@ -35,4 +35,4 @@ def main(a):
 
     for data in range(len(a)):
         a[data]=int(a[data]*i)
-    print("The sorted list is:", a)
+    #print("The sorted list is:", a)

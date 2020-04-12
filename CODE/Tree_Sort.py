@@ -47,6 +47,6 @@ def main(a):
     global out_put
     Tree_Sort(a)
     a=out_put
-    print("The sorted list is:", a)
+    #print("The sorted list is:", a)
     
 

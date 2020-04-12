@@ -25,4 +25,4 @@ def heapSort(a):
 
 def main(a):
     a=heapSort(a)
-    print("The sorted list is:", a)
+    #print("The sorted list is:", a)
