@@ -48,16 +48,19 @@ def main():
     for i in range(len(algo)):
         time_count=0
         for j in range(c):
-            for k in range(c):
-                array=copy.deepcopy(dataset)
-                init=time()
-                arr=algo[i].main(array)
-                time_count+=(time()-init)
+            array=copy.deepcopy(dataset)
+            init=time()
+            arr=algo[i].main(array)
+            time_count+=(time()-init)
 
-        time_set[algo_name[i]]=time_count/(c*c)
-        print("The Execution time of '",algo_name[i],"' is:",time_set[algo_name[i]])
+        print("The Execution time of '",algo_name[i],"' for",c,"time is:",time_count)
+        time_set[algo_name[i]]=time_count/c
 
+    print()
+    for key,value in sorted(time_set.items(),key=lambda item: item[1]):
+        print("The avarage time taken by '",key,"' algorithm is: ",value)
 
+    print()
     max_time = max(time_set, key=time_set.get)
     print("The Maximum time taken by '",max_time,"' algorithm=",time_set[max_time])
     min_time = min(time_set, key=time_set.get)
