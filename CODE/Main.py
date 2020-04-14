@@ -67,6 +67,6 @@ def main():
     max_time = max(time_set, key=time_set.get)
     print("The Maximum time taken by '",max_time,"' algorithm=",time_set[max_time])
     min_time = min(time_set, key=time_set.get)
-    print("The Minimum time taken by '",min_time,"' algorithm=",time_set[max_time])
+    print("The Minimum time taken by '",min_time,"' algorithm=",time_set[min_time])
 
 main()
