@@ -20,6 +20,9 @@ import Strand_Sort
 import Tree_Sort
 import Dataset
 import copy
+import sys
+
+sys.setrecursionlimit(10**6) 
 
 algo=[
     Brick_Sort, Bubble_Sort, Bucket_Sort,
