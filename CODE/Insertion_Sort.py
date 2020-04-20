@@ -13,5 +13,5 @@ def insertion_sort(a):
     return a
 
 def main(a):
-    a=insertion_sort(a)
-    #print("The sorted list is:", a)
+    arr=insertion_sort(a)
+    return arr

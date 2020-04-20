@@ -29,5 +29,5 @@ def cycleSort(a):
     return a
 
 def main(a):
-    a=cycleSort(a)
-    #print("The sorted list is:", a)
+    arr=cycleSort(a)
+    return arr

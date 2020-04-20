@@ -25,8 +25,9 @@ def Introsort_Util(arr, begin, end, depthLimit):
   
 def Intro_Sort(arr, begin, end):
     depthLimit = 2 * math.log2(end - begin) 
-    Introsort_Util(arr, begin, end, depthLimit) 
+    Introsort_Util(arr, begin, end, depthLimit)
+    return arr
    
 def main(arr):
-    Intro_Sort(arr, 0, len(arr) - 1)
-    #print("The sorted list is:", arr)
+    a=Intro_Sort(arr, 0, len(arr) - 1)
+    return a

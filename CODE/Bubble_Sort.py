@@ -9,5 +9,5 @@ def bubble_sort(a):
     
 
 def main(a):
-    a=bubble_sort(a)
-    #print("The sorted list is:", a)
+    arr=bubble_sort(a)
+    return arr

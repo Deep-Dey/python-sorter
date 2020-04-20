@@ -19,5 +19,5 @@ def Strand_Sort(input_list):
     return output_list
 
 def main(a):
-    a=Strand_Sort(a)
-    #print("The sorted list is:", a)
+    arr=Strand_Sort(a)
+    return arr

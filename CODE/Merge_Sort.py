@@ -38,5 +38,5 @@ def merge_sort(a):
     return a
 
 def main(a):
-    a=merge_sort(a)
-    #print("The sorted list is:", a)
+    arr=merge_sort(a)
+    return arr

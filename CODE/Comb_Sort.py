@@ -14,8 +14,8 @@ def comb_Sort(arr):
 		for i in range(0, n-gap): 
 			if arr[i] > arr[i + gap]: 
 				arr[i], arr[i + gap]=arr[i + gap], arr[i]
-
+	return arr
 
 def main(a):
-    comb_Sort(a)
-    #print("The sorted list is:", a)
+    arr=comb_Sort(a)
+    return arr

@@ -18,4 +18,4 @@ def Brick_Sort(arr):
 
 def main(a):
     arr=Brick_Sort(a)
-    #print("The sorted list is:", arr)
+    return arr

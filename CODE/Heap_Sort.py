@@ -24,5 +24,5 @@ def heapSort(a):
     return a
 
 def main(a):
-    a=heapSort(a)
-    #print("The sorted list is:", a)
+    arr=heapSort(a)
+    return arr

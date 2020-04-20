@@ -14,5 +14,5 @@ def selection_sort(a):
     return a
 
 def main(a):
-    a=selection_sort(a)
-    #print("The sorted list is:", a)
+    arr=selection_sort(a)
+    return arr
