@@ -24,7 +24,7 @@ A **Python 3** code for time calculating some Sorting Algorithm.
     18. Tree_Sort
     
     Total 18 sorting algorithm with their execution time 
-    on a Dataset with the outcome of fastest and slowest 
+    on a Dataset(String/Numerical) with the outcome of fastest and slowest 
     algorithm on given dataset.
 
 ## Prerequisites
