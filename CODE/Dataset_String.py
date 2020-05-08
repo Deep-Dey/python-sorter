@@ -17,4 +17,19 @@ def main(n):
     for i in range(len(itemset)):
         itemset[i]=itemset[i].lower()
     
+#################################################### Write to a file    
+    import os
+
+    directory_path = os.path.join(os.getcwd(), 'FILES')
+    if not os.path.exists(directory_path):
+                os.mkdir(directory_path)
+
+    file_path = os.path.join(directory_path, 'Unsorted_Strings.txt')
+
+    f = open(file_path, 'w')
+    for i in itemset:
+        f.write(i)
+        f.write(' ')
+    f.close()
+
     return itemset

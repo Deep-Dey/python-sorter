@@ -19,6 +19,7 @@ import Stooge_Sort
 import Strand_Sort
 import Tree_Sort
 import Dataset_Int
+import Create_files_for_int
 import copy
 import sys
 
@@ -60,6 +61,7 @@ def main():
                 arr=algo[i].main(array)
                 time_count+=(time()-init)
 
+            Create_files_for_int.main(arr, algo_name[i])
             print("The Execution time of '",algo_name[i],"' for",c,"time is:",time_count)
             time_set[algo_name[i]]=time_count/c
 
