@@ -1,3 +1,23 @@
+# Quicksort is an algorithm based on divide and conquer approach
+# in which the array is split into subarrays and these sub-arrays are recursively called to sort the elements.
+#
+# Algorithm for Quick Sort:
+# quickSort(array, leftmostIndex, rightmostIndex)
+#   if (leftmostIndex < rightmostIndex)
+#     pivotIndex <- partition(array,leftmostIndex, rightmostIndex)
+#     quickSort(array, leftmostIndex, pivotIndex)
+#     quickSort(array, pivotIndex + 1, rightmostIndex)
+#
+# partition(array, leftmostIndex, rightmostIndex)
+#   set rightmostIndex as pivotIndex
+#   storeIndex <- leftmostIndex - 1
+#   for i <- leftmostIndex + 1 to rightmostIndex
+#   if element[i] < pivotElement
+#     swap element[i] and element[storeIndex]
+#     storeIndex++
+#   swap pivotElement and element[storeIndex+1]
+# return storeIndex + 1
+################################################################################
 def pivot(a,s,n):## 's' is the starting position and 'n' is the ending position
         i=s-1 ## Set the pivot index
         pivot=a[s]

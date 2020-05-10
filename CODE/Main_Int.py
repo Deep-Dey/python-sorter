@@ -1,3 +1,6 @@
+# This program perform all kinds of sortings on Numerical type Dataset as many time as user want(n) and
+# show total time to execute each algorithm for n times and single time execution of each algorithm
+############################################################################################
 from time import time
 
 import Brick_Sort

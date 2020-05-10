@@ -1,3 +1,17 @@
+# It is based on the idea that the permutation to be sorted can be factored into cycles,
+# which can individually be rotated to give a sorted result.
+#
+# Algorithm for Cycle Sort:
+# CycleSort()
+#     1. If the element is already at the correct position then
+#             do nothing.
+#     2. else 
+#             we will write it to its intended position.
+#             That position is inhabited by a different element b,
+#             which we then have to move to its correct position.
+#             This process of displacing elements to their correct positions continues
+#             until an element is moved to the original position of a. This completes a cycle.
+##################################################################################################
 def cycleSort(a):
     for cycleStart in range(0,len(a) - 1):
         item=a[cycleStart]

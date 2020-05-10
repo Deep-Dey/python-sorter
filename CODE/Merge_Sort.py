@@ -1,3 +1,14 @@
+# Merge Sort is a kind of Divide and Conquer algorithm in computer programming.
+#
+# Pseudo code for Merge Sort:
+# MergeSort(A, p, r):
+#     if p > r 
+#         return
+#     q = (p+r)/2
+#     MergeSort(A, p, q)
+#     MergeSort(A, q+1, r)
+#     merge(A, p, q, r)
+#########################################################################################
 def merge(a,L,R):
     i=0
     j=0

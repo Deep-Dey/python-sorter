@@ -1,19 +1,18 @@
+# This program perform all kinds of sortings on String type Dataset as many time as user want(n) and
+# show total time to execute each algorithm for n times and single time execution of each algorithm
+############################################################################################
 from time import time
 
 import Brick_Sort
-import Bubble_Sort
-#import Bucket_Sort
+import Bubble_Sort       
 import Comb_Sort
-#import Counting_Sort
 import Cycle_Sort
 import Gnome_Sort
 import Heap_Sort
 import Insertion_Sort
 import Intro_Sort
 import Merge_Sort
-#import Pigeonhole_Sort
 import Quick_Sort
-#import Radix_Sort
 import Selection_Sort
 import Stooge_Sort
 import Strand_Sort

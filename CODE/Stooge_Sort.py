@@ -1,3 +1,15 @@
+# Stooge sort is a recursive sorting algorithm.
+# The running time of the algorithm is thus slower compared to reasonable sorting algorithms
+# and a canonical example of a fairly inefficient sort. It is however more efficient than Slowsort.
+#
+# Algorithm for Stooge Sort:
+# StoogeSort()
+#     1.  If the value at the start is larger than the value at the end, swap them.
+#     2.  If there are 3 or more elements in the list, then:
+#         i.      Stooge sort the initial 2/3 of the list
+#         ii.     Stooge sort the final 2/3 of the list
+#         iii.    Stooge sort the initial 2/3 of the list again
+#########################################################################################
 def Stooge_Sort(arr, l, h): 
     if l < h:
         if arr[l]>arr[h]: 

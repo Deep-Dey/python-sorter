@@ -1,3 +1,15 @@
+# Heapsort is a comparison-based sorting algorithm.
+# In the first step, the Heapsort algorithm involves preparing the list by first turning it into a max heap.
+# In the second step, a sorted array is created by 
+# repeatedly removing the largest element from the heap and inserting it into the array.
+
+# Pseudo code for Heap Sort:
+# HeapSort()  
+#     1.  Call the buildMaxHeap() function on the list. Also referred to as heapify(), this builds a heap from a list in O(n) operations.
+#     2.  Swap the first element of the list with the final element. Decrease the considered range of the list by one.
+#     3.  Call the siftDown() function on the list to sift the new first element to its appropriate index in the heap.
+#     4.  Go to step (2) unless the considered range of the list is one element.
+###########################################################################################
 def heapify(a,n,i): 
     maximum=i 
     l=2*i+1 

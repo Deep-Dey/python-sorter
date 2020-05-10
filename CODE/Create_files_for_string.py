@@ -1,3 +1,7 @@
+# This program create a TXT file for String Dataset after sorted by each algorithm
+# and named each file as algorithm name
+# All the files created in "..\FILES\STRING" path
+############################################################################
 def main(itemset,algo_name):
     import os
 

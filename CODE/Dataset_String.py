@@ -1,3 +1,7 @@
+# This program took String values from 'https://www.ef.com/wwen/english-resources/english-vocabulary/top-3000-words'
+# to perform sorting where number of Strings is given by the user 
+# and store them into a TXT file named "Unsorted_Strings.txt"
+#####################################################################################
 def main(n):  
     from bs4 import BeautifulSoup
     import requests
@@ -17,7 +21,7 @@ def main(n):
     for i in range(len(itemset)):
         itemset[i]=itemset[i].lower()
     
-#################################################### Write to a file    
+#################################################### Write to a TXT file in "..\FILES\" path   
     import os
 
     directory_path = os.path.join(os.getcwd(), 'FILES')

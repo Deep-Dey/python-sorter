@@ -1,9 +1,12 @@
+# This program generate Numerical values to perform sorting where number of data is given by the user 
+# and store them into a TXT file named "Unsorted_Integers.txt"
+#####################################################################################
 def main(n):
     itemset=list()
     for j in range(n,0,-1):
         itemset.append(j)
             
-#################################################### Write to a file    
+#################################################### Write to a TXT file in "..\FILES\" path   
     import os
 
     directory_path = os.path.join(os.getcwd(), 'FILES')
