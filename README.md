@@ -30,6 +30,7 @@ A **Python 3** code for time calculating some Sorting Algorithm.
 ## Prerequisites
 
 * **Python 3**  
+* Active Internet Connection  
 
 ## Getting started
 
