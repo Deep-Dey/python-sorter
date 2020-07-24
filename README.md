@@ -29,7 +29,7 @@ A **Python 3** code for time calculating some Sorting Algorithm.
 
 ## Prerequisites
 
-* **Python 3**  
+* **Python 3** and **pip** or **Anaconda**
 * Active Internet Connection  
 
 ## Getting started
@@ -39,4 +39,11 @@ Clone the repository to your local machine using,
 ```
 ~$ git clone https://github.com/Deep-Dey/Time-Calculation-for-Sorting-Algorithms.git
 ```
-* Just execute/run the "**main.py**" file to get the output.
+## Environment Setup
+To install all dependencies at once, move into project directory and run,
+## Linux/Mac OS
+~$ pip3 install -r Dependencies.txt
+## Windows OS
+~$ pip install -r Dependencies.txt
+## Run/Execute
+* Just execute/run the "**main.py**" file to get the output using any IDE.
