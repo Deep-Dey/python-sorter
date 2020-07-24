@@ -25,57 +25,61 @@ import Dataset_Int
 import Create_files_for_int
 import copy
 import sys
+import Column_Chart
 
-sys.setrecursionlimit(10**6) 
+sys.setrecursionlimit(10 ** 6)
 
-algo=[
+algo = [
     Brick_Sort, Bubble_Sort, Bucket_Sort,
-    Comb_Sort, Counting_Sort, Cycle_Sort, 
+    Comb_Sort, Counting_Sort, Cycle_Sort,
     Gnome_Sort, Heap_Sort, Insertion_Sort,
     Intro_Sort, Merge_Sort, Pigeonhole_Sort,
     Quick_Sort, Radix_Sort, Selection_Sort,
     Stooge_Sort, Strand_Sort, Tree_Sort
-    ]
+]
 
-algo_name=[
+algo_name = [
     'Brick_Sort', 'Bubble_Sort', 'Bucket_Sort',
-    'Comb_Sort', 'Counting_Sort', 'Cycle_Sort', 
+    'Comb_Sort', 'Counting_Sort', 'Cycle_Sort',
     'Gnome_Sort', 'Heap_Sort', 'Insertion_Sort',
     'Intro_Sort', 'Merge_Sort', 'Pigeonhole_Sort',
     'Quick_Sort', 'Radix_Sort', 'Selection_Sort',
     'Stooge_Sort', 'Strand_Sort', 'Tree_Sort'
-    ]
+]
 
-time_set=dict()
-n=int(input("How many data you want to sort...."))
-c=int(input("How many times you want to perform sorting...."))
-check_for_stooge=input("Do you want to run 'Stooge Sort'....\nBecause it increases program execution time very high(y/n)?")
-dataset=Dataset_Int.main(n)
+time_set = list()
+total_time_set = list()
+n = int(input("How many data you want to sort...."))
+c = int(input("How many times you want to perform sorting...."))
+check_for_stooge = input("Do you want to run 'Stooge Sort'...."
+                         "\nBecause it increases program execution time very high(y/n)?")
+dataset = Dataset_Int.main(n)
+
 
 def main():
     for i in range(len(algo)):
-        time_count=0
-        if (check_for_stooge=='N' or check_for_stooge=='n') and algo_name[i]=='Stooge_Sort':
+        time_count = 0
+        if (check_for_stooge == 'N' or check_for_stooge == 'n') and algo_name[i] == 'Stooge_Sort':
             pass
         else:
             for j in range(c):
-                array=copy.deepcopy(dataset)
-                init=time()
-                arr=algo[i].main(array)
-                time_count+=(time()-init)
+                array = copy.deepcopy(dataset)
+                init = time()
+                arr = algo[i].main(array)
+                time_count += (time() - init)
 
             Create_files_for_int.main(arr, algo_name[i])
-            print("The Execution time of '",algo_name[i],"' for",c,"time is:",time_count)
-            time_set[algo_name[i]]=time_count/c
+            total_time_set.append([algo_name[i], time_count])
+            time_set.append([algo_name[i], time_count / c])
 
-    print()
-    for key,value in sorted(time_set.items(),key=lambda item: item[1]):
-        print("The avarage time taken by '",key,"' algorithm is: ",value)
+    flag=1
+    print("\n...The Execution time of each algorithm for", c, "times...\n")
+    Column_Chart.main(total_time_set, flag, c)
 
-    print()
-    max_time = max(time_set, key=time_set.get)
-    print("The Maximum time taken by '",max_time,"' algorithm=",time_set[max_time])
-    min_time = min(time_set, key=time_set.get)
-    print("The Minimum time taken by '",min_time,"' algorithm=",time_set[min_time])
+    flag=0
+    print("\n...The Average Execution time of each algorithm is...\n")
+    Column_Chart.main(time_set, flag, c)
+
+
 
 main()
