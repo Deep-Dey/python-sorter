@@ -9,7 +9,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setup(
     name='python-sorter',
-    version='1.1.0',
+    version='1.1.1',
     description='Apply multiple type of sorting algorithm on your data and also compare which sorting is fastes on your data',
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -21,9 +21,9 @@ setup(
     include_package_data=True,
     packages=find_packages(where='src', include=('*', 'data_sorter.*')),
     install_requires=[
-        'numpy>=1.20.3',
-        'pandas>=1.3.4',
-        'seaborn>=0.11.2',
+        'numpy>=1.20',
+        'pandas>=1.3',
+        'seaborn>=0.11',
     ],
     classifiers=[
         # How mature is this project? Common values are
