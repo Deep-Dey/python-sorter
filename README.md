@@ -1,6 +1,6 @@
-# Time-Calculation-for-Sorting-Algorithms
+# python-sorter
 
-A **Python 3** code for time calculating some Sorting Algorithm.
+A **Python** package to apply multiple type of sorting algorithm on your data and also compare which sorting is fastes on your data
 
 # Features
 
@@ -23,9 +23,7 @@ A **Python 3** code for time calculating some Sorting Algorithm.
     17. Strand_Sort
     18. Tree_Sort
     
-    Total 18 sorting algorithm with their execution time 
-    on a Dataset(String/Numerical) with the outcome of fastest and slowest 
-    algorithm on given dataset.
+    Available total 18 sorting algorithm to perform sorting.
 
 ## Prerequisites
 
@@ -39,11 +37,3 @@ Clone the repository to your local machine using,
 ```
 ~$ git clone https://github.com/Deep-Dey/Time-Calculation-for-Sorting-Algorithms.git
 ```
-## Environment Setup
-To install all dependencies at once, move into project directory and run,
-## Linux/Mac OS
-~$ pip3 install -r Dependencies.txt
-## Windows OS
-~$ pip install -r Dependencies.txt
-## Run/Execute
-* Just execute/run the "**main.py**" file to get the output using any IDE.
