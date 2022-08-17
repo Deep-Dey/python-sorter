@@ -21,9 +21,9 @@ setup(
     include_package_data=True,
     packages=find_packages(where='src', include=('*', 'data_sorter.*')),
     install_requires=[
-        'numpy==1.20.3',
-        'pandas==1.3.4',
-        'seaborn==0.11.2',
+        'numpy>=1.20.3',
+        'pandas>=1.3.4',
+        'seaborn>=0.11.2',
     ],
     classifiers=[
         # How mature is this project? Common values are
