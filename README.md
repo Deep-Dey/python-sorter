@@ -11,8 +11,27 @@ A **Python** package to apply multiple type of sorting algorithm on your data an
     import data_sorter
     
     arr = [0.32, 0.33, 0.37, 0.42, 0.47, 0.51, 0.52]
+    
+    ####### To perform sorting #########
     arr = data_sorter.bubble_sort(arr)
     print(arr)
+
+    ##### To compare execution time between different algos ######
+    
+    # apply all sorting technique
+    result = data_sorter.get_comparison(arr)
+
+    # specify which sorting algorithm to apply
+    result = data_sorter.get_comparison(arr, ['bubble_sort'])
+
+    ##### To plot execution time between different algos ######
+
+    # apply all sorting technique
+    result = data_sorter.plot_comparison(arr)
+
+    # specify which sorting algorithm to apply
+    result = data_sorter.plot_comparison(arr, ['bubble_sort'])
+
 
 # Available sorting algorithms
 
@@ -20,14 +39,14 @@ A **Python** package to apply multiple type of sorting algorithm on your data an
     - bubble_sort
     - bucket_sort (only for float data)
     - comb_sort
-    - counting_sort
+    - counting_sort (only for integer data)
     - cycle_sort
     - gnome_sort
     - heap_sort
     - insertion_sort
     - intro_sort
     - merge_sort
-    - pigeonhole_sort
+    - pigeonhole_sort (only for integer data)
     - quick_sort
     - radix_sort
     - selection_sort

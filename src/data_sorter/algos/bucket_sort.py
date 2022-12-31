@@ -1,4 +1,4 @@
-from selection_sort import selection_sort
+from data_sorter.algos.selection_sort import selection_sort
 
 
 def bucket_sort(arr):

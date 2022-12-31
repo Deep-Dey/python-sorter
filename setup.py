@@ -1,6 +1,9 @@
 # Always prefer setuptools over distutils
-from setuptools import setup, find_packages
 import pathlib
+from setuptools import setup, find_packages
+
+import numpy as np
+
 
 here = pathlib.Path(__file__).parent.resolve()
 
@@ -9,7 +12,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setup(
     name='python-sorter',
-    version='1.1.1',
+    version='1.2.0',
     description='Apply multiple type of sorting algorithm on your data and also compare which sorting is fastes on your data',
     long_description=long_description,
     long_description_content_type="text/markdown",
